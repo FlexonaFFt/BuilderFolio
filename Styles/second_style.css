@@ -1,0 +1,682 @@
+@font-face {
+    font-family: "Lack";
+    src: url(../Fonts/Lack/Lack.ttf);
+}
+
+@font-face {
+    font-family: "Lack_Line";
+    src: url(../Fonts/LackLine/lack-line-regular.otf);
+}
+
+:root {
+    /* Основные шрифты */
+    --Lack: "Lack";
+    --Lack-line: "Lack_Line";
+    --Montserrat: "Montserrat";
+
+    /* Основные цвета */
+    --main-bg-color: #212121;
+    --main-color: #fff;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    height: 5500px;
+}
+
+header {
+    position: fixed;
+    height: 80px;
+}
+
+header .hamburger_menu i.bx-menu-alt-left {
+    color: var(--main-color);
+    position: absolute;
+    left: 25px;
+    top: 14px;
+    display: inline-flex;
+    padding: 13px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 50px;
+    transition: 0.6s;
+}
+
+header .hamburger_menu i.bx-menu-alt-left:hover {
+    color: bisque;
+}
+
+/* Задаю параметры content_container*/
+
+.content_container {
+    width: 1200px;
+    height: 4800px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 120px;
+    top: 100px;
+}
+
+/* Прописываю стили introduction */
+
+.introduction {
+    width: 1200px;
+    height: 700px;
+    flex-shrink: 0;
+}
+
+.introduction .rec_img_intr, .rec_img_intr img {
+    width: 895px;
+    height: 700px;
+    flex-shrink: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+h1 {
+    width: 285px;
+    height: 74px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 30px;
+}
+
+.introduction .txt_block_intr {
+    width: 285px;
+    position: absolute;
+    right: 0;
+    top: 111px;
+
+    color: var(--main-color);
+    text-align: justify;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.introduction .txt_block_intr .two {
+    margin-top: 15px;
+}
+
+.introduction .txt_block_intr .three, .four {
+    margin-top: 35px;
+}
+
+/* Прописываю стили project_one */
+.project_one {
+    width: 1200px;
+    height: 700px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.project_one h1 {
+    width: 1200px;
+    position: absolute;
+    top: 800px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 70px;
+}
+
+.project_one .mini_txt_block {
+    width: 793px;
+    height: 58px;
+    flex-shrink: 0;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 932px;
+
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_one .mini_txt_block .p_i_2 {
+    margin: 0;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.project_one .mini_txt_block .one {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.project_one .mini_txt_block .two {
+    position: absolute;
+    left: 240px;
+    top: 0px;
+}
+
+.project_one .mini_txt_block .three {
+    position: absolute;
+    left: 420px;
+    top: 0px;
+}
+
+.project_one .mini_txt_block .four {
+    position: absolute;
+    left: 620px;
+    top: 0px;
+}
+
+.project_one .img_block_prj_one {
+    width: 793px;
+    height: 460px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 1040px;
+}
+
+.project_one .img_block_prj_one .img_left {
+    width: 285px;
+    height: 460px;
+    flex-shrink: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+    margin-right: 12px;
+}
+
+.project_one .img_block_prj_one .img_right {
+    width: 488px;
+    height: 460px;
+    flex-shrink: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.project_one .right_txt_block {
+    width: 387px;
+    position: absolute;
+    right: 0;
+    top: 1022px;
+
+    color: var(--main-color);
+    text-align: justify;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_one .right_txt_block .down_text {
+    margin-top: 65px;
+}
+
+/* Прописываю стили project_two */
+.project_two {
+    width: 1200px;
+    height: 770px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.project_two h1 {
+    width: 1200px;
+    position: absolute;
+    top: 1600px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 70px;
+}
+
+.project_two .mini_txt_block {
+    width: 488px;
+    height: 54px;
+    gap: 20px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 1800px;
+
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_two .mini_txt_block .p_i_3 {
+    margin: 0;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.project_two .txt_block_two {
+    width: 692px;
+    height: 150px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 1800px;
+    display: inline-block;
+
+    color: var(--main-color);
+    text-align: justify;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_two .txt_block_two .left {
+    width: 283px;
+    margin: 0;
+}
+
+.project_two .txt_block_two .right {
+    width: 387px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.project_two .left_images {
+    position: absolute;
+    top: 1670px;
+}
+
+.project_two .left_images .left {
+    width: 285px;
+    height: 409px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 0;
+    top: 291px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.project_two .left_images .right {
+    width: 387px;
+    height: 409px;
+    flex-shrink: 0;
+    position: absolute;
+    left: 300px;
+    top: 291px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.project_two .leffer {
+    width: 488px;
+    height: 500px;
+    flex-shrink: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+
+    position: absolute;
+    right: 0;
+    margin-top: 270px; 
+}
+
+/* Прописываю стили project_three */
+.project_three {
+    width: 1200px;
+    height: 770px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.project_three h1 {
+    width: 692px;
+    position: absolute;
+    top: 2500px;
+    left: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 70px;
+}
+
+.project_three .txt_three {
+    width: 285px;
+    position: absolute;
+    left: 0px;
+    margin-top: 246px;
+
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_three .txt_three .txt_three_block {
+    margin-bottom: 67px;
+}
+
+.project_three .mini_txt_block {
+    width: 183px;
+    height: 550px;
+    position: absolute;
+    margin: 0;
+    right: 590px;
+    top: 2700px;
+
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_three .mini_txt_block .p_i_4 {
+    margin-bottom: 100px;
+}
+
+.project_three .left_big_img {
+    width: 488px;
+    height: 720px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
+
+/* Прописываю стили project_four */
+.project_four {
+    width: 1200px;
+    height: 700px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.project_four h1 {
+    width: 1200px;
+    position: absolute;
+    top: 3400px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 65px;
+}
+
+.project_four .txt_block_four {
+    width: 692px;
+    height: 150px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top: 3525px;
+    display: inline-block;
+
+    color: var(--main-color);
+    text-align: justify;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_four .txt_block_four .left {
+    width: 283px;
+    margin: 0;
+}
+
+.project_four .txt_block_four .right {
+    width: 387px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.project_four .left_images {
+    position: absolute;
+    top: 3400px;
+    right: 0;
+}
+
+.project_four .left_images .left {
+    width: 285px;
+    height: 409px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 410px;
+    top: 291px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.project_four .left_images .right {
+    width: 387px;
+    height: 409px;
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    top: 291px;
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.project_four .textick {
+    width: 488px;
+    position: absolute;
+    top: 3510px;
+
+    color: var(--main-color);
+    text-align: justify;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_four .textick .txt_four_block {
+    margin-bottom: 32px;
+}
+
+/* Прописываю стили project_five */
+.project_five {
+    width: 1200px;
+    height: 700px;
+    flex-shrink: 0;
+    margin-top: 175px;
+}
+
+.project_five h1 {
+    width: 1200px;
+    position: absolute;
+    top: 4220px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 65px;
+}
+
+.project_five .texts {
+    width: 692px;
+    position: absolute;
+    left: 0;
+    top: 4327px;
+
+    color: #FFF;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.project_five .texts .two {
+    width: 488px;
+    position: absolute;
+    left: 0;
+}
+
+.project_five .texts .three {
+    width: 183px;
+    position: absolute;
+    right: 0;
+}
+
+.project_five .texts .four {
+    margin-top: 275px;
+}
+
+.project_five .img_block_five .top {
+    width: 488px;
+    height: 135px;
+    flex-shrink: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+    position: absolute;
+    right: 0;
+    margin-top: 132px;
+}
+
+.project_five .img_block_five .bottom {
+    width: 488px;
+    height: 409px;
+    flex-shrink: 0;
+    background-size: cover;
+    filter: grayscale(100%);
+    position: absolute;
+    right: 0;
+    margin-top: 291px;
+}
+
+/* Прописываю стили footer */
+footer {
+    width: 1200px;
+    height: 200px;
+    position: absolute;
+    top: 5190px;
+    left: 120px;
+}
+
+.footer_ .rectangle_top {
+    width: 1210px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+}
+
+.footer_ .rectangle_bottom {
+    width: 1210px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.footer_ .who {
+    width: 184px;
+
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    position: absolute;
+    left: 508px;
+    bottom: 10px;
+}
+
+.footer_ .link_group {
+    width: 183px;
+    height: 124px;
+    flex-shrink: 0;
+
+    width: 183px;
+
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--Montserrat);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.footer_ .link_group .zag {
+    font-weight: 600;
+}
+
+.footer_ .link_groups .two {
+    position: absolute;
+    left: 300px;
+    top: 0;
+}
+
+.footer_ .link_groups .three {
+    position: absolute;
+    right: 300px;
+    top: 0px;
+}
+
+.footer_ .link_groups .four {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
