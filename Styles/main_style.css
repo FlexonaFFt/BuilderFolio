@@ -27,6 +27,7 @@ body {
 header {
     position: fixed;
     height: 80px;
+    z-index: 25;
 }
 
 header .hamburger_menu i.bx-menu-alt-left {
