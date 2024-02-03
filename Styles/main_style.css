@@ -24,31 +24,6 @@ body {
     height: 5900px;
 }
 
-header {
-    position: fixed;
-    height: 80px;
-    z-index: 25;
-}
-
-header .hamburger_menu i.bx-menu-alt-left {
-    color: var(--main-color);
-    position: absolute;
-    left: 25px;
-    top: 14px;
-    display: inline-flex;
-    padding: 13px 8px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 50px;
-    transition: 0.6s;
-}
-
-header .hamburger_menu i.bx-menu-alt-left:hover {
-    color: bisque;
-}
-
 /* Стили для content_block */
 
 .content_block {
@@ -150,7 +125,6 @@ header .hamburger_menu i.bx-menu-alt-left:hover {
     position: absolute;
     width: 100%;
     height: inherit;
-    z-index: 10;
 }
 
 .gallery_media {
@@ -201,7 +175,6 @@ header .hamburger_menu i.bx-menu-alt-left:hover {
 .gallery_text {
     position: relative;
     height: 100vh;
-    z-index: 20;
     font-size: 45px;
     font-family: var(--Montserrat);
     text-align: center;
