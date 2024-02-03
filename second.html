@@ -8,17 +8,30 @@
     <!-- Подключаю файлы -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Styles/second_style.css">
+    <link rel="stylesheet" href="Styles/header_styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
     <!-- Подключаю скрипты -->
+    <script src="Scripts/header_script.js"></script>
 </head>
 <body>
 
-    <!-- Прописываю header -->
-    <header>
-        <div class="hamburger_menu">
-            <i class='bx bx-menu-alt-left'></i>
+    <!-- Прописфваю обновлённый header -->
+    <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
+    </div>
+    
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="index.html">Home</a></li>
+                <li class="nav__list-item"><a href="#big_pic_block">About</a></li>
+                <li class="nav__list-item"><a href="second.html">Projects</a></li>
+                <li class="nav__list-item"><a href="#faq_section">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
 
     <!-- Прописываю content container -->
     <div class="content_container">

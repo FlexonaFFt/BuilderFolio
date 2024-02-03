@@ -8,99 +8,38 @@
     <!-- Подключаю файлы -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Styles/main_style.css">
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
-    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
-    <link rel="stylesheet" href="Styles/nav_bar_style.css">
+    <link rel="stylesheet" href="Styles/header_styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
     <!-- Подключаю скрипты -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-    <script src="Scripts/nav_script.js"></script>
+    <script src="Scripts/header_script.js"></script>
     <!-- <script src="Scripts/gallery_animation.js"></script> -->
 </head>
 <body>
 
     <!-- Прописываю header -->
-    <header>
+    <!-- <header>
         <div class="hamburger_menu">
             <i class='bx bx-menu-alt-left'></i>
         </div>
+    </header> -->
 
-        <!-- Прописываю nav_bar menu -->
-        <div class="menu">
-            <div class="menu_wrapper">
-                <div class="menu_frame grid">
-                    <div class="menu_pages">
-                        <div class="menu_pages_title ofh">
-                            <p>Pages</p>
-                        </div>
-                        <div class="menu_pages_links">
-                            <div class="ofh">
-                                <a href="">Home</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">About</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">Chapters</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">Request</a>
-                            </div>
-
-                            <div class="ofh">
-                                <a href="" class="menu_page_links_more">
-                                    <span>View More &#x2197;</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu_pages">
-                        <div class="menu_pages_title ofh">
-                            <p>Projects</p>
-                        </div>
-                        <div class="menu_pages_links">
-                            <div class="ofh">
-                                <a href="">Project_One</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">Project_Two</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">Project_Three</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">Project_Four</a>
-                            </div>
-                            <div class="ofh">
-                                <a href="">Project_Five</a>
-                            </div>
-
-                            <div class="ofh">
-                                <a href="" class="menu_page_links_more">
-                                    <span>View More &#x2197;</span>
-                                </a>
-                            </div>
-
-                            <div class="menu_subframe">
-                                <div class="menu_subframe">
-                                    <div class="menu_subframe_item ofh">
-                                        <span>Open for any collaboration</span>
-                                    </div>
-                                </div>
-                                <div class="menu_subframe">
-                                    <div class="menu_subframe_item ofh">
-                                        <span>&copy2024 - Unseen Scenario</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>  
+    <!-- Прописфваю обновлённый header -->
+    <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
+    </div>
+    
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="index.html">Home</a></li>
+                <li class="nav__list-item"><a href="#big_pic_block">About</a></li>
+                <li class="nav__list-item"><a href="second.html">Projects</a></li>
+                <li class="nav__list-item"><a href="#faq_section">Contact</a></li>
+            </ul>
         </div>
-    </header>
+    </div>
 
     <div class="content_block">
         <div class="introduction" id="introduction">
@@ -134,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="big_pic_block">
+        <div class="big_pic_block" id="big_pic_block">
             <div class="txt_block">
                 <p class="first_p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -204,7 +143,7 @@
     </div>
 
     <!-- Прописываю секцию с FAQ -->
-    <div class="faq_section">
+    <div class="faq_section" id="faq_section">
         <div class="ramka"></div>
         <div class="rec_img">
             <img src="Materials/modern-skyscrapers-in-business-district.jpg" alt="modern-district">
